@@ -6,9 +6,8 @@ import './CommentList.css';
 import CommentEdit from "../comments/CommentEdit";
 import CommentCreate from "../comments/CommentCreate";
 
-export default function CommentList () {
+export default function CommentList ({ questionId }) {
 
-    const { questionId } = useParams();
     const userInfo = useSelector(state => state.loginReducer.userInfo);
     const userId = userInfo.id;
     const dispatch = useDispatch();
@@ -87,7 +86,7 @@ export default function CommentList () {
         }
         return (
             <div className='questionListContainer'>
-                <h2>Question {questionId}</h2>
+                <h2>Comment List</h2>
                 {commentList.map(item => renderCommentItem(item))}
             </div>
         );

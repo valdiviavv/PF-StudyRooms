@@ -3,10 +3,8 @@ import { useDispatch, useSelector} from "react-redux";
 
 import Filters from "./Filters";
 import NavBar from "../NavBar/NavBar";
-// import "../../CssAdicional/Home.css"
 import Question from "../Preguntas/Question";
 import { getQuestions } from "../../Controllers/Actions/questionsActions";
-
 
 
 
@@ -31,7 +29,7 @@ const Home = () => {
         {allQuestions.map((e,index)=>{
           return(
               <div>
-                <Question key={e.index} title={e.title} description={e.description} ratingAverage={e.ratingAverage}> </Question>
+                <Question key={e.index} questionId={e.id} title={e.title} description={e.description} ratingAverage={e.ratingAverage}> </Question>
               </div>
           )
         })}

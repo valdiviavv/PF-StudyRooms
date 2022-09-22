@@ -9,6 +9,7 @@ import UserForm from './componentes/Usuarios/UserForm';
 import LandingPage from './componentes/LandingPage/LandingPage';
 import Donations from './componentes/Donations/Donations';
 import AskQuestion from './componentes/Preguntas/AskQuestion'
+import QuestionDetails from "./componentes/Preguntas/QuestionDetails";
 import AnswerList from "./componentes/answers/AnswerList";
 import TOS from './componentes/Home/TOS';
 import CommentList from "./componentes/comments/CommentList";
@@ -29,6 +30,7 @@ function App() {
     <Route path='/TOS' element={<TOS/>}/>
     <Route path='/comments/:questionId' element={<CommentList/>}/>
     <Route path='/Donations' element={<Donations/>}/>
+    <Route path='/questions/:questionId' element={<QuestionDetails/>}/>
     <Route path="*" element={<Error404 />} />
    </Routes>
    </Router>
