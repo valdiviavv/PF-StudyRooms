@@ -230,8 +230,8 @@ export default function CreateUser() {
                             required />
                         {newUser.avatar.length ?
                             (<img src={newUser.avatar} width="50" height="50" alt="uploaded img" />)
-                            :
-                            "cargando"
+                            : null
+                            
                         }
                     </div>
                 </div>
