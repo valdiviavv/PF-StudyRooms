@@ -6,3 +6,4 @@ grant all privileges on database "StudyRooms" to study_user;
 select * from votesxanswers;
 select * from ratingxanswers;
 select * from answers order by id;
+select * from users order by id;
