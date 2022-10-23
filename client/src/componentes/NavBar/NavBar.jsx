@@ -13,7 +13,7 @@ const NavBar = () => {
     const dir = useLocation()
 
     return (
-        <nav className='customNavbar d-flex bg-dark justify-content-center m-0 p-0'>
+        <nav className='customNavbar d-flex justify-content-center m-0 p-0'>
             <div className='col-3 p-0 m-0'>
                 <div className='row  p-0 m-0 justify-content-center'>
                     <div className='col d-flex justify-content-center'>
@@ -25,9 +25,9 @@ const NavBar = () => {
             </div>
             <div className='col p-0 m-0'>
                 <div role="group" aria-label="Basic example" className=' d-flex'>
-                    <Link to="/Home"><button type="button" className="btn btn-light m-1" >Home</button></Link>
-                    <Link to="/AskQuestion"><button type="button" className="btn btn-light m-1 " >Ask Question</button></Link>
-                    <Link to="/Donations"><button type="button" className="btn btn-light m-1" > Donate</button></Link>
+                    <Link to="/Home"><button type="button" className="btn btn-primary m-1" >Home</button></Link>
+                    <Link to="/AskQuestion"><button type="button" className="btn btn-primary m-1 " >Ask Question</button></Link>
+                    <Link to="/Donations"><button type="button" className="btn btn-primary m-1" > Donate</button></Link>
                     {userInfo && userInfo.isAdmin && (
                         <>
                             <Link to="/admin-panel"><button type="button" className="btn btn-danger m-1">Users</button></Link>

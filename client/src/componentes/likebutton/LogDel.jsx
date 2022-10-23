@@ -45,8 +45,8 @@ const LogDel = () => {
 
     return (<div>
 
-        <button className="bg-dark border-0" onClick={e => handleClick(e)}>
-            <div className="bg-danger btn">
+        <button className="border-0" onClick={e => handleClick(e)}>
+            <div className="bg-danger btn text-white">
                 Delete Question
             </div>
         </button>

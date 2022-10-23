@@ -59,7 +59,7 @@ const CheckoutForm = () => {
                 <CardElement />
                 <div className="inputs">
                     <input className="form-control" type="number" value={cantidad} onChange={e => handleChange(e)} placeholder="Donation Amount (dollars)"></input>
-                    <button className="btn btn-primary rounded-pill">
+                    <button className="btn btn-primary">
                         Donate!
                     </button>
                 </div>
@@ -71,16 +71,16 @@ const Donations = () => {
     return (
         <div>
             <NavBar />
-            <div className="Donaciones text-center bg-black">
+            <div className="Donaciones text-center">
 
-                <div className="container bg-dark text-center">
+                <div className="container text-center">
                     <h1 className="text-danger my-2">WARNING!</h1>
-                    <h4 className="text-white my-2"> making a donation may cause the following side effects:</h4>
-                    <p className="text-warning">increased sexyness</p>
-                    <p className="text-warning">feeding hungry developers in 3rd world countries</p>
-                    <p className="text-warning">increased quality in this website</p>
-                    <p className="text-warning">better functions</p>
-                    <p className="text-warning">your father may come back home and tell you that he's proud</p>
+                    <h4 className="my-2">Making a donation may cause the following side effects:</h4>
+                    <p className="">Increased other user attention</p>
+                    <p className="">Feeding hungry developers in 3rd world countries</p>
+                    <p className="">Increased quality in this website</p>
+                    <p className="">Better functions</p>
+                    <p className="">Your answers will have more likes</p>
                     <Elements stripe={stripePromise}>
                         <CheckoutForm />
                     </Elements>

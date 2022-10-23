@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     !token ? <Navigate to="/" replace={true} /> :
-      <div className="bg-dark">
+      <div className="">
         <div className="row m-0 p-0 sticky-top">
           <NavBar />
         </div>
@@ -34,7 +34,7 @@ const Home = () => {
             <div className="row m-0 p-0 sticky">
               <Filters />
             </div>
-            <div className="row bg-dark m-0 p-0">
+            <div className="row m-0 p-0">
               <Link to="/Home" className="text-decoration-none m-0 p-0">
                 <div className="col d-flex w-100 mt-5 justify-content-center ">
 

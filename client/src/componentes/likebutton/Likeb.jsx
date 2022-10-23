@@ -45,10 +45,10 @@ const LikeB = () => {
         dispatch(getDetail(id))
     }
         
-        return (<div className="btn bg-dark ">
+        return (<div className="btn ">
 
-            <button className="bg-dark border-0" onClick={e =>handleSubmit(e) }>
-                <div className="bg-primary btn d-inline-flex align-items-center">
+            <button className="border-0" onClick={e =>handleSubmit(e) }>
+                <div className="bg-primary text-white btn d-inline-flex align-items-center">
                 <img src={like} alt="" height="20px"/>
                 <span>likes:</span>
                 <span>{check[0].votesxquestions.length}</span>
@@ -56,5 +56,5 @@ const LikeB = () => {
             </button>
         </div>  );
 }
- 
+
 export default LikeB;

@@ -108,7 +108,7 @@ export default function UserList() {
 
     function renderUserItem(userItem) {
         return (
-            <div className='singleAnswer bg-dark text-white' key={userItem.id}>
+            <div className='singleAnswer' key={userItem.id}>
                 <div className="singleUserTitle">
                     <h3>{userItem.userName}</h3>
                     <div>
@@ -302,7 +302,7 @@ export default function UserList() {
             );
         }
         return (
-            <div className="answerListContainer">
+            <div className="answerListContainer container">
                 <div className="singleAnswerTitle">
                     <h2>Admin User List</h2>
                     <div>

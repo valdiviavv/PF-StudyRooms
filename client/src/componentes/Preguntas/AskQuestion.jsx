@@ -109,9 +109,9 @@ const AskQuestion = (likes) => {
     }, [dispatch])
 
     return (
-        <div className="bg-dark text-white" >
+        <div className="" >
             <Navbar />
-            <div className="container h-100 bg-dark border text-white">
+            <div className="container h-100 border">
                 <h2 className=" fs-2 text-center pt-2"> Make a Question for our community </h2>
 
                 <form className="container-fluid mb-5" onSubmit={(e) => handleSubmit(e)}>

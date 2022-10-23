@@ -31,7 +31,7 @@ export default function ProfileUser(){
     
 
     return(
-        <div className="bg-dark text-white">
+        <div className="">
         <NavBar/>
             <div className="container border text-center my-1">
                 <h2 className="my-3">My Profile</h2>

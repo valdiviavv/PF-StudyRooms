@@ -45,9 +45,9 @@ const QuestionDetail = () => {
     myQuestion?.map((e, index) => {
 
       return (
-        <div className="bg-dark text-white" key={index}>
+        <div className="" key={index}>
           <NavBar />
-          <div className="container border bg-dark text-white">
+          <div className="container border">
             <h5 >user {e.user.userName} asks:</h5>
             <h2 >{e.title}?</h2>
             <h4 >description:</h4>

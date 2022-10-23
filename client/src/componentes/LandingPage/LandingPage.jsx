@@ -24,7 +24,7 @@ const LandingPage = () => {
 
   return (
     <div className="containerDv grid">
-      <div className="g-row p-0 m-0 bg-dark rowLoginNav">
+      <div className="g-row p-0 m-0 rowLoginNav">
         <div className="g-col p-0 m-0">
           <NavBarNoLogIn />
         </div>
@@ -43,7 +43,7 @@ const LandingPage = () => {
         </div>
 
       </div>
-      <div className="g-row footerLanding bg-dark m-0 p-0">
+      <div className="g-row footerLanding m-0 p-0">
         <div className="g-col m-0 p-0">
           <Footer />
         </div>

@@ -100,7 +100,7 @@ export default function CategoryList () {
         }
         return (
             <>
-                <div className='answerListContainer'>
+                <div className='answerListContainer container'>
                     <div className="singleAnswerTitle">
                         <h2>Category List</h2>
                         <div className='filterSelect'>

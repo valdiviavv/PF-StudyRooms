@@ -45,7 +45,7 @@ if (e.target.value==="All"){setCheck({check:false})}
   }
 
   return (
-    <div className="bg-dark text-white">
+    <div className="">
       <h1>Filters</h1>
       <p>Category</p>
       <select className="form-select 1"  onChange={(e) => handleFilterCategory(e)}>
