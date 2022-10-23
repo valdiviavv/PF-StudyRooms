@@ -12,39 +12,43 @@ const mockURL = process.env.DB_LOCALHOST3001 || "https://studyrooms-deploy.herok
 async function createTestData() {
   // MOCKUP USERS
   await axios.post(mockURL + '/users/signup', {
-    userName: "testUser1",
-    firstName: "test1",
-    lastName: "user1",
-    email: "test1@test.com",
+    userName: "john.smith",
+    firstName: "John",
+    lastName: "Smith",
+    email: "john@smith.com",
     password: "123",
     active: true,
     isVerified: true
   })
   await axios.post(mockURL + '/users/signup', {
-    userName: "testUser2",
-    firstName: "test2",
-    lastName: "user2",
-    email: "test2@test.com",
+    userName: "stephen.grider",
+    firstName: "Stephen",
+    lastName: "Grider",
+    email: "stephen@grider.com",
     password: "1234",
     active: true,
+    amountDonated: 15.5,
+    isPremium: true,
     isVerified: true
   })
   await axios.post(mockURL + '/users/signup', {
-    userName: "testUser3",
-    firstName: "test3",
-    lastName: "user3",
-    email: "test3@test.com",
+    userName: "colt.steele",
+    firstName: "Colt",
+    lastName: "Steele",
+    email: "colt@steele.com",
     password: "12345",
     active: false,
     isVerified: true
   })
   await axios.post(mockURL + '/users/signup', {
-    userName: "testUser4",
-    firstName: "test4",
-    lastName: "user4",
-    email: "test4@test.com",
+    userName: "john.smilga",
+    firstName: "John",
+    lastName: "Smilga",
+    email: "john@smilga.com",
     password: "123456",
     active: true,
+    amountDonated: 38.2,
+    isPremium: true,
     isVerified: true
   })
   await axios.post(mockURL + '/users/signup', {

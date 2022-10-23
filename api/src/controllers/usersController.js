@@ -9,7 +9,7 @@ const mockURL = process.env.DB_LOCALHOST3001 || "https://studyrooms-deploy.herok
 const signUp = async (req, res) => {
 
     try {
-        const { userName, password, firstName, lastName, email } = req.body
+        const { userName, password, firstName, lastName, email, amountDonated } = req.body
 
         const avatar = req.body.avatar || 'https://res.cloudinary.com/dcmn0kkly/image/upload/v1663359592/guest-user_clv1cg.jpg'
 
@@ -17,6 +17,7 @@ const signUp = async (req, res) => {
         const isVerified = req.body.isVerified || false
         const active = req.body.active || false
         const isAdmin = req.body.isAdmin || false
+        const isPremium = req.body.isPremium || false
         /*------------------------------------------------*/
 
         const userFound = await User.findOne({ where: { userName: userName } })
@@ -35,9 +36,10 @@ const signUp = async (req, res) => {
             email,
             hashedPassword,
             avatar,
-            isPremium: false,
+            isPremium,
             active,  // cambiar esto a "active: false" para deploy
             isAdmin,  // cambiar esto a "isAdmin: false" para deploy
+            amountDonated,
             isVerified
         })
         const dataToSend = {
